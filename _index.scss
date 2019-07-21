@@ -1,0 +1,176 @@
+.position {
+  position: relative;
+  .todolist {
+    background: #ffedf7;
+    .todolist-add {
+      .todolist-add_input {
+        input {
+          color: #ff4384;
+          text-transform: uppercase;
+          border: none;
+          font-style: italic;
+        }
+        .todolist-add_btn {
+          color: #ff4384;
+          background: #fff;
+        }
+      }
+    }
+    .todolist-content {
+      font-weight: bold;
+      margin-top: 145px;
+      .todolist-content_square {
+        height: 48px;
+        width: 48px;
+        border: #003164 2px solid;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .todolist-content_txt {
+        font-size: 24px;
+        line-height: 28px;
+        color: #003164;
+        text-transform: uppercase;
+        display: inline-block;
+        &::after {
+          position: absolute;
+          content: "";
+          height: 12px;
+          width: 12px;
+          border: #ff4384 1px solid;
+          border-radius: 50%;
+          left: 3.5%;
+          bottom: 30%;
+        }
+      }
+    }
+    .todolist-time {
+      .todolist-time_txt {
+        font-size: 176px;
+        color: #ff4384;
+        text-align: center;
+        line-height: 176px;
+      }
+    }
+    .todolist-undo {
+      margin-top: 17%;
+      margin-left: 48px;
+      .todolist-undo_list {
+        position: relative;
+        border-bottom: 1px solid #aaa;
+        p {
+          text-transform: uppercase;
+          color: #003164;
+          line-height: 24px;
+          margin-left: 40px;
+          display: inline-block;
+          font-weight: bold;
+          letter-spacing: 2px;
+          margin-bottom: 0;
+          &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            height: 24px;
+            width: 24px;
+            border: #003164 1px solid;
+            border-radius: 50%;
+          }
+        }
+        .btn-undo {
+          position: relative;
+          text-align: right;
+          height: 24px;
+          width: 24px;
+          border-radius: 50%;
+          border: #003164 1px solid;
+          margin-bottom: 0.5rem;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 8px;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 12px solid #003164;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .todolist-undo_more {
+      padding-right: 4.5%;
+      .undo-more_btn {
+        color: #ff4384;
+        background: #ffedf7;
+        font-weight: bold;
+        border: none;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        &:hover {
+          color: #fff;
+          background: #003164;
+        }
+      }
+    }
+  }
+  .menu {
+    background: #003164;
+    ul {
+      list-style: none;
+    }
+    a {
+      .md-36 {
+        color: #fff;
+        font-size: 36px;
+        &:hover {
+          color: #ff4384;
+        }
+      }
+    }
+    .menu-txt {
+      font-size: 24px;
+      line-height: 32px;
+      color: #fff;
+      writing-mode: vertical-lr;
+      display: block;
+      margin-top: 550px;
+    }
+  }
+  .clock {
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    border: #ff4384 4px solid;
+    z-index: 1;
+    .clock-content {
+      position: relative;
+      background: #ff4384;
+      margin-top: 5%;
+      margin-left: 5%;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      .clock-content_btn {
+        position: absolute;
+        top: 45%;
+        left: 42%;
+        border-radius: 50%;
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        padding: 0;
+        &:target {
+          border: none;
+        }
+        .md-96 {
+          color: #fff;
+          font-size: 96px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,237 @@
+.position {
+  position: relative;
+}
+
+.position .todolist {
+  background: #ffedf7;
+}
+
+.position .todolist .todolist-add .todolist-add_input input {
+  color: #ff4384;
+  text-transform: uppercase;
+  border: none;
+  font-style: italic;
+}
+
+.position .todolist .todolist-add .todolist-add_input .todolist-add_btn {
+  color: #ff4384;
+  background: #fff;
+}
+
+.position .todolist .todolist-content {
+  font-weight: bold;
+  margin-top: 145px;
+}
+
+.position .todolist .todolist-content .todolist-content_square {
+  height: 48px;
+  width: 48px;
+  border: #003164 2px solid;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.position .todolist .todolist-content .todolist-content_txt {
+  font-size: 24px;
+  line-height: 28px;
+  color: #003164;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.position .todolist .todolist-content .todolist-content_txt::after {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  border: #ff4384 1px solid;
+  border-radius: 50%;
+  left: 3.5%;
+  bottom: 30%;
+}
+
+.position .todolist .todolist-time .todolist-time_txt {
+  font-size: 176px;
+  color: #ff4384;
+  text-align: center;
+  line-height: 176px;
+}
+
+.position .todolist .todolist-undo {
+  margin-top: 17%;
+  margin-left: 48px;
+}
+
+.position .todolist .todolist-undo .todolist-undo_list {
+  position: relative;
+  border-bottom: 1px solid #aaa;
+}
+
+.position .todolist .todolist-undo .todolist-undo_list p {
+  text-transform: uppercase;
+  color: #003164;
+  line-height: 24px;
+  margin-left: 40px;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.position .todolist .todolist-undo .todolist-undo_list p::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: #003164 1px solid;
+  border-radius: 50%;
+}
+
+.position .todolist .todolist-undo .todolist-undo_list .btn-undo {
+  position: relative;
+  text-align: right;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: #003164 1px solid;
+  margin-bottom: 0.5rem;
+}
+
+.position .todolist .todolist-undo .todolist-undo_list .btn-undo::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid #003164;
+  display: inline-block;
+}
+
+.position .todolist .todolist-undo_more {
+  padding-right: 4.5%;
+}
+
+.position .todolist .todolist-undo_more .undo-more_btn {
+  color: #ff4384;
+  background: #ffedf7;
+  font-weight: bold;
+  border: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.position .todolist .todolist-undo_more .undo-more_btn:hover {
+  color: #fff;
+  background: #003164;
+}
+
+.position .menu {
+  background: #003164;
+}
+
+.position .menu ul {
+  list-style: none;
+}
+
+.position .menu a .md-36 {
+  color: #fff;
+  font-size: 36px;
+}
+
+.position .menu a .md-36:hover {
+  color: #ff4384;
+}
+
+.position .menu .menu-txt {
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  display: block;
+  margin-top: 550px;
+}
+
+.position .clock {
+  position: absolute;
+  top: 8%;
+  left: 45%;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  border: #ff4384 4px solid;
+  z-index: 1;
+}
+
+.position .clock .clock-content {
+  position: relative;
+  background: #ff4384;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+}
+
+.position .clock .clock-content .clock-content_btn {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.position .clock .clock-content .clock-content_btn:target {
+  border: none;
+}
+
+.position .clock .clock-content .clock-content_btn .md-96 {
+  color: #fff;
+  font-size: 96px;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular");
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  background: #fff;
+  z-index: -2;
+}
+
+body .material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: "liga";
+          font-feature-settings: "liga";
+}
+/*# sourceMappingURL=all.css.map */
